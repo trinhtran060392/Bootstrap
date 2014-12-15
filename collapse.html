@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="plugin/dist/css/bootstrap.css">
+</head>
+<body>
+	
+			<ul class="nav nav-pills">
+				<li><a href="#" class="dr">link1</a></li>
+				<li><a href="#" class="btn btn-default" data-toggle="collapse" data-target="#demo">link2</a></li>
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">home<b class="caret"></b></a>
+					<ul class="dropdown-menu">
+						<li><a class="btn btn-primary">link3</a></li>
+						<li><a class="btn btn-primary">link4</a></li>
+					</ul>
+				</li>
+
+			</ul>
+			<div id="demo" class="collapse in">
+				<p>
+					 Ten toi la Tran Van Trinh
+
+				</p>
+
+			</div>
+			<div class="panel-group" id="accordion">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title"><a data-toggle="collapse" data-parent="accordion" href="#collapse1">Click</a></h3>
+					</div>
+					<div id="collapse1" class="panel-collapse collapse in">
+						<div class="panel-body">
+							tran van trinh
+						</div>
+					</div>
+
+				</div>
+				<div class="panel-primary">
+					<div class="panel-heading">
+						<h3 class="panel-title">
+							<a href="#collapse2" data-toggle="collapse" data-parent="accordion">Click</a>
+						</h3>
+					</div>
+					<div id="collapse2" class="panel-collapse collapse ">
+						<div class="panel-body">
+							do huu tu
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+	<script type="text/javascript" src="plugin/dist/js/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="plugin/dist/js/bootstrap.js"></script>
+	<script type="text/javascript">
+		
+		 $(function () { $('#collapse2').collapse('toggle')});
+	</script>
+</body>
+</html>
