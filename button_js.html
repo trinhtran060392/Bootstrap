@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="plugin/dist/css/bootstrap.css">
+</head>
+<body>
+	<div id="button1" class="bs-example">
+		<button type="button" class="btn btn-primary">Primary</button>
+	</div>
+	<div id="button2"> 
+		<button type="button" class="btn btn-primary " data-loading2-text="Loading">Primary</button>
+	</div>
+	<div id="button3"> 
+		<button type="button" class="btn btn-success" data-loading3-text="Loading">Primary</button>
+	</div>
+	<div id="button4"> 
+		<button type="button" class="btn btn-primary" data-complete4-text="Loading Finished">Primary</button>
+	</div>
+	<script type="text/javascript" src="plugin/dist/js/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="plugin/dist/js/bootstrap.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			$('#button1 .btn').click(function(){
+
+				$(this).button('toggle');
+			});
+		});
+		$(function(){
+			$('#button2 .btn').click(function(){
+
+				$(this).button('loading2');
+			});
+		});
+		$(function(){
+			$('#button3 .btn').click(function(){
+				console.log('a');
+
+				$(this).button('loading3').delay(1000).queue(function() {
+            $(this).button('reset');
+         });  
+			});
+		});
+		$(function(){
+			$('#button4 .btn').click(function(){
+
+				$(this).button('loading').delay(1000).queue(function() {
+            $(this).button('complete4');
+         });        
+			});
+		});
+	</script>
+</body>
+</html>
