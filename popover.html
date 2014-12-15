@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Popover</title>
+	<link rel="stylesheet" type="text/css" href="plugin/dist/css/bootstrap.css">
+
+</head>
+<body>
+	<div class="container" style="width: 200px;">
+		<button type="button" class="btn btn-danger" title="Popover title" data-toggle="popover" data-placement="left">Popover button
+
+		</button>
+
+	</div>
+
+	<script type="text/javascript" src="plugin/dist/js/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="plugin/dist/js/bootstrap.js"></script>
+	<script type="text/javascript">
+	$(function(){
+		$("[data-toggle='popover']").popover();
+	});
+	</script>
+</body>
+</html>
