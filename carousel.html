@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="plugin/dist/css/bootstrap.css">
+</head>
+<body>
+	<div id="carousel" class="carousel slide">
+		<ol class="carousel-indicators">
+			<li data-target="#carousel" data-slide-to="0" class="active"></li>
+			<li data-target="#carousel" data-slide-to="1"></li>
+			<li data-target="#carousel" data-slide-to="2"></li>
+		</ol>
+
+	
+		<div class="carousel-inner">
+			<div class="item active">
+				<img src="plugin/dist/images/chelsea.jpg">
+			</div>
+			<div class="item">
+				<img src="plugin/dist/images/chelsea.jpg">
+			</div>
+			<div class="item">
+				<img src="plugin/dist/images/chelsea.jpg">
+			</div>
+		</div>
+		<a href="#carousel" class="carousel-control left" data-slide="prev">&lsaquo;</a>
+		<a href="#carousel" class="carousel-control right" data-slide="next">&rsaquo;</a>
+		<div style="text-align: center">
+			<input type="button" class="btn start-slide" value="start">
+			<input type="button" class="btn pause-slide" value="pause">
+			<input type="button" class="btn prev-slide" value="pre">
+			<input type="button" class="btn next-slide" value="next">
+			<input type="button" class="btn slide-one" value="one">
+			<input type="button" class="btn start-two" value="two">
+		</div>
+	</div>
+	<script type="text/javascript" src="plugin/dist/js/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="plugin/dist/js/bootstrap.js"></script>
+	<script type="text/javascript">
+		$(function(){
+
+			$('.start-slide').click(function(){
+				$('#carousel').carousel('cycle');
+			});
+			$('.prev-slide').click(function(){
+				$('#carousel').carousel('prev');
+			});
+			
+			$('.next-slide').click(function(){
+				$('#carousel').carousel('next');
+			});
+			$('.slide-one').click(function(){
+				$('#carousel').carousel(1);
+			});
+		});
+	</script>
+</body>
+</html>
