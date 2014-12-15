@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		ToolTip Demo Application
+	</title>
+	<link rel="stylesheet" type="text/css" href="plugin/dist/css/bootstrap.css">
+</head>
+<body>
+<div style="padding: 100px 100px 10px;">
+	<a href="#" class="tooltip-show" data-toggle="tooltip" data-html="true" title="<h1>abc</h1>" >a</a>
+	<a href="#" class="tooltip-hide" data-toggle="tooltip" title="xyz">b</a>
+	<a href="#" class="tooltip-show" data-toggle="tooltip" title="wui">c</a>
+</div>
+	<script type="text/javascript" src="plugin/dist/js/jquery-2.1.1.min.js"></script>
+	<script type="text/javascript" src="plugin/dist/js/bootstrap.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('a[data-toggle="tooltip"]').tooltip({
+			});
+		});
+	</script>
+	
+</body>
+</html>
