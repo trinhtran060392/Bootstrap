@@ -6,11 +6,11 @@
 </head>
 <body>
 	<div class="dropdown">
-		<button type="button" class="btn btn-default" id="dropdown1" data-toggle="dropdown">
-			Topics
-			<span class="caret"></span>
-
-		</button>
+	<button id="test" type="button">Test</button>
+		<button id="dLabel" type="button" data-toggle="dropdown">
+    Dropdown trigger
+    <span class="caret"></span>
+  </button>
 		<ul class="dropdown-menu" role="menu" aria-labelledby="dropdown1">
 			<li role="presentation">
 				<a href="#" role="menuitem" tabindex="-1">1</a>
@@ -23,7 +23,10 @@
 			</li>
 		</ul>
 	</div>
-	<script type="text/javascript" src="plugin/dist/js/jquery-2.1.1.mi.js"></script>
+	<script type="text/javascript" src="plugin/dist/js/jquery-2.1.1.min.js"></script>
 	<script type="text/javascript" src="plugin/dist/js/bootstrap.js"></script>
+	<script>
+			$('#dLabel').dropdown('toggle');
+	</script>
 </body>
 </html>

@@ -7,7 +7,7 @@
 </head>
 <body>
 
-	<button type="button" class="btn btn-success" data-toggle="modal" data-target="#myModal">
+	<button type="button" class="btn btn-success" data-target="#myModal">
 		Click me
 
 	</button>
@@ -39,7 +39,8 @@
 			
 			<div class="modal-content">
 				<div class="modal-header">
-					<h4 class="modal-title" id="exampleLabel">New message</h4>
+					<button type="button" class="close" data-dismiss="modal">x</button>
+					<h4 class="modal-title" id="exampleLabel">New message</h4> 
 				</div>
 				<div class="modal-body">
 					<form role="form">
@@ -67,5 +68,6 @@
 		<script type="text/javascript" src="plugin/dist/js/bootstrap.js"></script>
 	
 	<script type="text/javascript" src="modal.js"></script>
+
 </body>
 </html>
